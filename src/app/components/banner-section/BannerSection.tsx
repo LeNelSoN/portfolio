@@ -11,6 +11,7 @@ const BannerSection = () => {
           width={400}
           height={400} 
           className="object-cover"
+          priority
         />
         <div className="flex flex-col items-center justify-center text-gray-100 md:w-1/3 px-6 md:px-0">
           <h1

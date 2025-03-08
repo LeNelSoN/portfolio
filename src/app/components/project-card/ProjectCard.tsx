@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitH
               src={imgSrc}
               alt={altImg}
               width={300}
-              height={200}
+              height={100}
               className="object-cover"
             />
             <p className="mt-2">
