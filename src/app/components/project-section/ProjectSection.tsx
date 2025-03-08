@@ -28,7 +28,7 @@ const ProjectSection: React.FC = () => {
                     title={"Portfolio"}
                     altImg={"Portfolio Github"}
                     description={`C'est mon portfolio, il est fait avec Next.js et TailwindCSS. Il est responsive et contient des informations sur moi, mes projets et mes compétences.`}
-                    link={"https://github.com/LeNelSoN"}
+                    link={"https://github.com/LeNelSoN/portfolio"}
                 />
             </div>
         </div>
