@@ -1,10 +1,14 @@
 import ProjectCard from "../project-card/ProjectCard"
 
-const ProjectSection: React.FC = () => {
+interface ProjectSectionProps {
+    id: string;
+}
+
+const ProjectSection: React.FC<ProjectSectionProps> = ({id}) => {
     return (
-        <div className="container mx-auto text-gray-600 w-full px-6">
-            <h2 className="text-4xl font-bold text-center mt-10 text-gray-800 drop-shadow-lg">Mes projets</h2>
-            <p className="text-center mt-5 md:text-2xl drop-shadow-lg">
+        <div className="container mx-auto w-full px-6 min-h-screen" id={id}>
+            <h2 className="text-4xl font-bold text-center mt-10 text-gray-400 drop-shadow-lg">Mes projets</h2>
+            <p className="text-center mt-5 md:text-2xl drop-shadow-lg text-gray-300">
                 Voila mes realisations, n&apos;hesitez pas a me contacter pour plus
                 d&apos;informations
             </p>

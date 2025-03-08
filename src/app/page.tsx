@@ -6,11 +6,11 @@ import ProjectSection from "./components/project-section/ProjectSection";
 export default function Home() {
 
   return (
-    <>
-      <BannerSection />
-      <Hero />
-      <ProjectSection />
+    <main className="bg-gray-800 pb-12">
+      <BannerSection id="about"/>
+      <Hero id="experience"/>
+      <ProjectSection id="project" />
       <Footer />
-    </>
+    </main>
   );
 }

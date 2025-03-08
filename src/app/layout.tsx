@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBarDesktop from "./components/navbar/NavBar";
+import MobileNavBar from "./components/navbar/MobileNavBar";
 
 export const metadata: Metadata = {
   title: "Nelis Valentin - Portfolio",
@@ -15,7 +17,9 @@ export default function RootLayout({
     <html lang="fr">
       <body
       >
+        <NavBarDesktop />
         {children}
+        <MobileNavBar />
       </body>
     </html>
   );

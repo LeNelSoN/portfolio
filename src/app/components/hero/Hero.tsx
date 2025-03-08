@@ -1,9 +1,13 @@
 import CheckCV from "../checkCV/CheckCV";
 
-const Hero: React.FC = () => {
+interface HeroProps {
+    id: string;
+}
+
+const Hero: React.FC<HeroProps> = ({id}) => {
     
   return (
-    <div className="bg-linear-to-b from-gray-900 from-90% text-gray-400">
+    <div className="bg-linear-to-b from-gray-900 from-90% text-gray-400" id={id}>
       <div className="container mx-auto p-4 md:flex items-center justify-center py-26">
         <div className="mx-auto p-4 text-center md:w-1/2">
           <h2 className="text-4xl mb-6">Le Développement Web</h2>

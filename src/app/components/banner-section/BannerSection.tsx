@@ -1,10 +1,14 @@
 import Image from "next/image";
 import profil from "@/app/assets/profil.png";
 
-const BannerSection = () => {
+interface BannerSectionProps {
+  id: string;
+}
+
+const BannerSection: React.FC<BannerSectionProps> = ({id}) => {
   return (
     <div className="bg-gray-900">
-      <div className="md:flex items-center justify-center min-h-screen bg-linear-to-b from-gray-900 from-80% to-cyan-950 rounded-b-full gap-14">
+      <div className="md:flex items-center justify-center min-h-screen bg-linear-to-b from-gray-900 from-80% to-cyan-950 rounded-b-full gap-14" id={id}>
         <Image
           src={profil}
           alt="profil"
