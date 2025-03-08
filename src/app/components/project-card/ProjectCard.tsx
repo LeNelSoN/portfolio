@@ -11,8 +11,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitHub.png", altImg, description, link }) => {
   return (
-    <div className="flex flex-col items-center bg-gray-200 p-4 rounded-lg shadow-xl text-justify min-h-[600px] w-full justify-between">
-            <h2 className="text-3xl font-bold text-gray-800">
+    <div className="flex flex-col items-center bg-gray-200 p-4 rounded-lg shadow-xl md:min-h-[700px] gap-6 md:gap-0 w-full justify-between">
+            <h2 className="text-2xl font-bold text-gray-800 text-center">
               {title}
             </h2>
             <Image
@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitH
               height={100}
               className="object-cover"
             />
-            <p className="mt-2 md:text-xl">
+            <p className="mt-2 md:text-xl text-justify">
               {description}
             </p>
 
