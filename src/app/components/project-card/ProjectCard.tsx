@@ -22,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitH
               height={100}
               className="object-cover"
             />
-            <p className="mt-2">
+            <p className="mt-2 md:text-xl">
               {description}
             </p>
 
