@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <div className="bg-linear-to-b from-gray-900 from-90% text-gray-400">
       <div className="container mx-auto p-4 md:flex items-center justify-center py-26">
         <div className="mx-auto p-4 text-center md:w-1/2">
-          <h1 className="text-4xl mb-6">Le Développement Web</h1>
+          <h2 className="text-4xl mb-6">Le Développement Web</h2>
           <p className="text-2xl">
             Avec une forte appétence pour la conception d’applications modernes et performantes. 
             J’apprécie particulièrement le travail sur des architectures robustes et scalables, 
