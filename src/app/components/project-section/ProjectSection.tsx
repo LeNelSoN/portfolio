@@ -6,13 +6,13 @@ interface ProjectSectionProps {
 
 const ProjectSection: React.FC<ProjectSectionProps> = ({id}) => {
     return (
-        <div className="container mx-auto w-full px-6 min-h-screen" id={id}>
+        <div className="container mx-auto w-full px-12 min-h-screen" id={id}>
             <h2 className="text-4xl font-bold text-center mt-10 text-gray-400 drop-shadow-lg">Mes projets</h2>
             <p className="text-center mt-5 md:text-2xl drop-shadow-lg text-gray-300">
                 Voila mes realisations, n&apos;hesitez pas a me contacter pour plus
                 d&apos;informations
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-10">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-10">
                 <ProjectCard 
                     title={"L'Api dont vous étes le heros"}
                     imgSrc={"/assets/Api hero.png"}
