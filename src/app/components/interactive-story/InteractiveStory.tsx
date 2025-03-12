@@ -16,7 +16,8 @@ const InteractiveStory = ({ storyData, finalStep }: InteractiveStoryProps) => {
   const [currentStep, setCurrentStep] = useState("start");
 
   return (
-    <div className="container mx-auto text-center md:w-1/2">
+    <div className="container mx-auto text-center md:w-1/2 px-8">
+      <h2 className="text-3xl mb-6">Mon histoire dont vous étes le héro</h2>
       <p className="text-xl mb-6">{storyData[currentStep].text}</p>
       <div className="flex flex-col space-y-4">
         {currentStep === "end" && finalStep != null ? 
