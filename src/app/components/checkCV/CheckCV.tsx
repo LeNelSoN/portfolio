@@ -47,12 +47,12 @@ import CVDesign from '@/app/assets/CV design.png';
                         </Link>
                     </>
                 }
-                <label className="mt-4 text-gray-100">
+                <label className="mt-4 text-gray-100 flex items-center justify-center">
                 <input 
                     type="checkbox" 
                     checked={withDesign} 
                     onChange={onDesignChange} 
-                    className="mr-2 hover:cursor-pointer"
+                    className="mr-2 hover:cursor-pointer w-5 h-5 rounded-4xl"
                 />
                     Version Complete
                 </label>

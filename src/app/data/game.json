@@ -1,0 +1,81 @@
+{
+    "start": {
+      "text": "Bienvenue, voyageur intrépide, sur le sentier de ma destinée. Tu es sur le point d’entreprendre une quête unique : celle de découvrir mon parcours à travers les méandres du développement et des choix qui l’ont façonné. Ici, chaque décision forge ton aventure. Plonge au cœur de mes expériences, explore mes apprentissages et dévoile les chemins que j’ai empruntés. Ne crains rien. Laisse-toi guider par ta curiosité et fais les choix qui résonnent avec toi. Car après tout, chaque aventure commence par un premier pas...",
+      "options": [
+        { "text": "Suivre la voie de la connaissance", "next": "formation" },
+        { "text": "Se lancer directement dans l’action", "next": "experience" }
+      ]
+    },
+    "formation": {
+      "text": "Chaque aventurier se doit d’acquérir un savoir avant de brandir son épée. Moi, j’ai forgé mon esprit à travers l’apprentissage du développement, affinant mes compétences et domptant les concepts essentiels qui font aujourd’hui ma force. Mais je te laisse le choix… Veux-tu découvrir toute l’histoire, depuis mes premiers pas dans le code jusqu’à ma maîtrise actuelle ? Ou préfères-tu un résumé concis de mon apprentissage, suffisant pour comprendre l’essence de mon savoir ?",
+      "options": [
+        { "text": "Les origines", "next": "life" },
+        { "text": "Aller droit au but", "next": "devweb" }
+      ]
+    },
+    "life":{
+        "text": "Né à l’âge d’un bébé, j’ai vu le jour au beau milieu d’une nuit d’hiver à Saint-Sylvestre. Un timing parfait, me diras-tu, sauf pour ma mère maternelle, trop occupée ce jour-là pour s'attendre à me voir débarquer. Ainsi, c’est dans la paisible bourgade de Sedan, au cœur des Ardennes, que j’ai fait ma grande entrée. Et dès le départ, j’ai su me démarquer… en étant le dernier bébé de l’année dans la région. Les gens devaient sûrement être trop occupés à faire la fête plutôt qu’à agrandir leur famille ! Un destin hors du commun ? Peut-être. Une entrée fracassante dans l’aventure de la vie ? Assurément.",
+        "options": [
+            { "text": "C'est peut un peu loin comme début", "next": "devweb" }
+        ]
+    },
+    "devweb":{
+        "text": "Pour devenir ceinture noire en Internet, il fallait que je forge mes compétences à la sueur de mon front (et de mon back). J’ai donc entrepris une formation en développement web et web mobile, décidant de commencer par les bases solides. Deux mois consacrés aux algorithmes, le dojo du raisonnement logique. HTML, CSS et JavaScript, les arts fondamentaux du web. React pour le front, PHP pour le back, un équilibre entre puissance et flexibilité. Mais bien vite, une frustration grandissante s'est installée. J’avais acquis les bases, mais je voulais aller plus loin, être plus efficace, construire des systèmes robustes. Alors, en parallèle de ma formation, j’ai pris les armes de l’auto-apprentissage : Docker, pour maîtriser l’art de l’environnement de développement. Node.js, pour construire des applications performantes côté serveur. Et tout cela a porté ses fruits… car j’ai décroché un stage chez Ekeep-IT. Mais ceci, cher aventurier, est une autre histoire...",
+        "options": [
+            { "text": "Retourner au début", "next": "start" },
+            { "text": "Découvrir la suite", "next": "cda" },
+            { "text": "Aller à l'expérience", "next": "experience" }
+
+        ]
+    },
+    "cda":{
+        "text": "Une fois mon titre de développeur web et web mobile en poche, j'avais soif de connaissance et d'apprentissage, je voulais travailler sur un réel projet en équipe, confronter mes connaissances et assimiler le savoir de mes pairs. Et j'ai eu la chance de pouvoir réaliser une alternance en Concepteur Développeur d’Applications. Fini les projets calculatrices et les listes de courses sur React. Nan, là, c'était le monde de la vérité véritable. Cette fois, j'ai appris à gérer des bases de données en SQL, à réaliser un backend en JAVA, à créer une API sécurisée qui tourne en production, à conteneuriser tout cela, à faire un front qui respecte l'UX/UI, réactif et performant. Franchement, je n'ai pas chômé et le rythme était compliqué. Je prenais le train le matin et le soir, je mettais deux heures pour arriver et autant pour rentrer. Ça a été compliqué, mais c'était une expérience incroyable, et le comble, c'est que j'ai eu mon titre haut la main et j'en suis fier, car je suis allé le chercher à la sueur de mon front.",
+        "options": [
+            { "text": "Retourner au début", "next": "start" },
+            { "text": "Découvrir la suite", "next": "experience" }
+        ]
+    },
+    "experience": {
+        "text": "Voila le cœur du sujet, les expériences. D’ici, plusieurs voies s’offrent à toi. Tu peux choisir d’explorer mes expériences transversales, celles qui m’ont forgé bien au-delà du code, et ainsi te projeter sur ce que je suis capable d’apporter à une équipe et à un projet, en plus de mes expériences dans l’IT. Ou bien, si tu es du genre à plonger directement dans l’action, à chercher l’essence même de mon parcours technique, alors prends la voie la plus directe et entre sans détour dans le cœur du volcan.",
+        "options": [
+            { "text": "Les expériences transversales", "next": "softskills" },
+            { "text": "Les expériences techniques", "next": "hardskills" }
+        ]
+    },
+    "softskills": {
+        "text": "J’ai fait mes premiers pas dans l’animation socio-culturelle, un environnement où l’humain est au cœur de chaque projet. Cette expérience m’a permis de développer des compétences essentielles qui dépassent le cadre technique : l’empathie, l’écoute active, la capacité à travailler en équipe et à gérer des situations parfois complexes. J’ai appris à résoudre des conflits, à fédérer un groupe autour d’un objectif commun et à structurer des projets de manière efficace. Un projet pédagogique, après tout, n’est pas si différent d’un cahier des charges. Il s’appuie sur des objectifs clairs, des étapes bien définies et un travail collaboratif où chacun apporte sa pierre à l’édifice. Cette approche m’a appris à prendre en compte les autres, à adapter ma manière de travailler et à comprendre que la performance individuelle ne vaut que si elle s’inscrit dans une dynamique collective. Pour qu’un projet aboutisse, ce n’est pas seulement une question de compétences techniques, c’est avant tout une question de synergie et de vision partagée.",
+        "options": [
+            { "text": "Voir les experiences dans l'IT", "next": "hardskills" },
+            { "text": "Découvrir la suite", "next": "softskills2" }
+        ]
+    },
+    "softskills2": {
+        "text": "Ensuite, j’ai eu l’opportunité d’évoluer dans le monde du spectacle en tant qu’échassier, jongleur et régisseur. Un univers où la rigueur et la discipline sont aussi essentielles que la créativité et l’adaptabilité. Chaque performance demandait un entraînement exigeant, une préparation minutieuse et une capacité à s’adapter en temps réel aux imprévus. La polyvalence était une nécessité, jonglant entre la gestion technique d’un spectacle et l’énergie à transmettre sur scène. Il fallait savoir se dépasser, persévérer malgré les erreurs, repousser ses limites à chaque entraînement et surtout, faire preuve d’une inventivité constante pour captiver un public toujours différent. C’est une expérience qui m’a appris que l’excellence ne vient pas seulement du talent, mais surtout du travail, de la détermination et de la capacité à transformer une contrainte en opportunité.",
+        "options": [
+            { "text": "Conclusion", "next": "end" },
+            { "text": "Voir les experiences dans l'IT", "next": "hardskills" }
+        ]
+    },
+    "hardskills": {
+        "text": "Mes expériences dans l’IT ne sont pas aussi longues que celles de mes parcours précédents, reconversion oblige, mais elles sont d’une richesse incomparable en apprentissage. Comme expliqué précédemment, j’ai eu l’opportunité de réaliser mon alternance chez Ekeep-IT et de travailler sur MY-UUU, un projet ambitieux qui vise à réunir les structures équestres de France et de Navarre afin de faciliter la découverte et la pratique de l’équitation. Ce fut une expérience incroyablement formatrice. J’ai découvert l’environnement Agile, avec son rythme structuré de sprints, reviews et daily stand-ups, un cadre où l’évolution du projet est une œuvre collective en constante amélioration. Fini le code en solo, les projets personnels où l’on bricole dans son coin. Là, j’ai vécu l’échange technique quotidien, la co-construction, l’apprentissage par l’expérience et le feedback des autres. C’est ici que j’ai forgé mes premières armes dans le code, que j’ai appris ce qu’était réellement le développement en entreprise, avec ses bonnes pratiques, ses exigences de qualité et son esprit d’équipe.",
+        "options": [
+            { "text": "Voir les experiences transversales", "next": "softskills" },
+            { "text": "Découvrir la suite", "next": "hardskills2" }
+        ]
+    },
+    "hardskills2":{
+        "text": "Ma deuxième expérience a eu lieu l’année dernière, au sein d’une agence web où j’ai travaillé au plus près de la clientèle. Cette fois, il ne s’agissait pas seulement de coder, mais de comprendre les problématiques des clients et de trouver des solutions adaptées pour booster leur business. Ce poste m’a permis d’aller au-delà du développement pur en apportant une véritable dimension stratégique et organisationnelle. J’ai pu mettre à profit mes compétences acquises en méthodes agiles, en structurant le travail d’équipe pour améliorer la gestion des projets et la communication interne. J’ai principalement géré un projet en Symfony visant à permettre la réservation et la location de véhicules agricoles. Un projet que j’ai eu la chance de piloter de A à Z, de la conception jusqu’à la mise en production. J’ai ainsi touché à tous les aspects du développement, de l’architecture technique à l’optimisation du produit final, en passant par les échanges avec le client et les ajustements en fonction de ses besoins. Cette expérience m’a conforté dans ma capacité à gérer un projet en autonomie tout en collaborant efficacement avec une équipe.",
+        "options": [
+            { "text": "Retourner au début", "next": "start" },
+            { "text": "Voir les experiences transversales", "next": "softskills" },
+            { "text": "Conclusion", "next": "end" }
+        ]
+    },
+    "end": {
+        "text": "Voilà, cher voyageur, tu as exploré les méandres de mon parcours, découvert les chemins qui ont façonné mon aventure. J’espère que cette quête t’a permis de mieux comprendre qui je suis, ce que je vaux et ce que je peux apporter à un projet. Car après tout, chaque aventure commence par un premier pas… et chaque décision forge notre destinée. Alors, prêt à écrire la suite de l’histoire ensemble ?",
+        "options": [
+            { "text": "Retourner au début", "next": "start" }
+        ]
+    }
+}
+  
