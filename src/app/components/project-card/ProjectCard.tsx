@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
+import GlitchedSubTitle from '../glitched/glitched-subtitle/GlitchedSubtitle';
+import GlitchedParagraph from '../glitched/glitched-paragraphe/GlitchedParagraphe';
 
 interface ProjectCardProps {
   title: string;
@@ -12,9 +14,9 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitHub.png", altImg, description, link }) => {
   return (
     <div className="flex flex-col items-center bg-gray-200 p-6 rounded-lg shadow-xl md:min-h-[700px] gap-6 md:gap-0 w-full justify-between">
-            <h2 className="text-2xl font-bold text-gray-800 text-center">
+            <GlitchedSubTitle className="text-2xl font-bold text-gray-800 text-center">
               {title}
-            </h2>
+            </GlitchedSubTitle>
             <Image
               src={imgSrc}
               alt={altImg}
@@ -22,9 +24,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitH
               height={100}
               className="object-cover"
             />
-            <p className="mt-2 md:text-lg text-justify">
+            <GlitchedParagraph className="mt-2 md:text-lg text-justify">
               {description}
-            </p>
+            </GlitchedParagraph>
 
             <a
               href={link}

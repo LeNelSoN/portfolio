@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import GlitchedParagraph from "../glitched/glitched-paragraphe/GlitchedParagraphe";
+import GlitchedSubTitle from "../glitched/glitched-subtitle/GlitchedSubtitle";
 
 interface StoryStep {
   text: string;
@@ -17,8 +19,8 @@ const InteractiveStory = ({ storyData, finalStep }: InteractiveStoryProps) => {
 
   return (
     <div className="container mx-auto text-center md:w-1/2 px-8">
-      <h2 className="text-3xl mb-6">Mon histoire dont vous étes le héros</h2>
-      <p className="text-xl mb-6">{storyData[currentStep].text}</p>
+      <GlitchedSubTitle className="text-3xl mb-6">Mon histoire dont vous étes le héros</GlitchedSubTitle>
+      <GlitchedParagraph className="text-xl mb-6">{storyData[currentStep].text}</GlitchedParagraph>
       <div className="flex flex-col space-y-4">
         {currentStep === "end" && finalStep != null ? 
           <button

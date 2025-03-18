@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -27,4 +28,77 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.pokemon-font {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.crt-effect {
+  position: relative;
+}
+
+.crt-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 2px,
+    transparent 4px,
+    transparent 4px
+  );
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+
+@keyframes glitch {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes glitch-lines {
+  0% { clip-path: inset(10% 0 90% 0); }
+  25% { clip-path: inset(30% 0 50% 0); }
+  50% { clip-path: inset(60% 0 20% 0); }
+  75% { clip-path: inset(40% 0 70% 0); }
+  100% { clip-path: inset(10% 0 90% 0); }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite alternate ease-in-out;
+  filter: hue-rotate(90deg) contrast(1.5);
+  text-shadow: 3px 3px red, -3px -3px blue;
+  position: relative;
+}
+
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.glitch::before {
+  animation: glitch-lines 0.2s infinite linear;
+  left: -2px;
+  text-shadow: -2px 0 red;
+}
+
+.glitch::after {
+  animation: glitch-lines 0.3s infinite linear reverse;
+  left: 2px;
+  text-shadow: 2px 0 blue;
 }

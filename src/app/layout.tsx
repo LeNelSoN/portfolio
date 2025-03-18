@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBarDesktop from "./components/navbar/NavBar";
 import MobileNavBar from "./components/navbar/MobileNavBar";
+import { GlitchProvider } from "./contexts/GlitchContext";
+import GlitchBattleModal from "./components/glitched/GlitchBattleModal";
+import GlitchButtonBattle from "./components/glitched/GlitchBoutonBattle";
 
 export const metadata: Metadata = {
   title: "Nelis Valentin - Portfolio",
@@ -31,9 +34,13 @@ export default function RootLayout({
       </head>
       <body
       >
-        <NavBarDesktop />
-        {children}
-        <MobileNavBar />
+        <GlitchProvider>
+          <NavBarDesktop />
+          {children}
+          <MobileNavBar />
+          <GlitchBattleModal/>
+          <GlitchButtonBattle/>
+        </GlitchProvider>
       </body>
     </html>
   );
