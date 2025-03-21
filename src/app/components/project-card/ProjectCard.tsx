@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, imgSrc = "/assets/GitH
               height={100}
               className="object-cover"
             />
-            <GlitchedParagraph className="mt-2 md:text-lg text-justify">
+            <GlitchedParagraph className="mt-2 md:text-lg text-justify text-gray-800">
               {description}
             </GlitchedParagraph>
 
